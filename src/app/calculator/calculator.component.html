@@ -1,0 +1,22 @@
+<h1>
+    This is my first calculator app created using Angular! Enjoy!
+</h1>
+
+<input [(ngModel)]='num1' type="number" name="first-number" placeholder="Enter First Number">
+<input [(ngModel)]='num2' type="number" name="second-number" placeholder="Enter Second Number">
+<br><br>
+<button (click)='calculator_add()'>
+    Add
+</button>
+<button (click)='calculator_subtract()'>
+    Subtract
+</button>
+<button (click)='calculator_multiply()'>
+    Multiply
+</button>
+<button (click)='calculator_divide()'>
+    Divide
+</button>
+<h2>
+    {{ result }}
+</h2>
