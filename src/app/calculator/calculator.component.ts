@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NONE_TYPE } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-calculator',
@@ -29,6 +30,13 @@ export class CalculatorComponent implements OnInit {
   calculator_divide()
   {
     this.result = this.num1 / this.num2;
+  }
+
+  calculator_clear()
+  {
+    this.result = '';
+    this.num1 = '';
+    this.num2 = '';
   }
 
   constructor() { }
